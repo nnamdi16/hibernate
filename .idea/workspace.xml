@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a65e1fd-83ec-4198-9113-a8e7e8a5de7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/DeleteStudentDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/hibernate/demo/UpdateStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/UpdateStudentDemo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,9 +69,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UpdateStudentDemo">
+  <component name="RunManager" selected="Application.DeleteStudentDemo">
     <configuration name="CreateStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.hibernate.demo.CreateStudentDemo" />
+      <module name="hibernate1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.hibernate.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.hibernate.demo.DeleteStudentDemo" />
       <module name="hibernate1" />
       <extension name="coverage">
         <pattern>
@@ -109,19 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJdbc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.TestJdbc" />
-      <module name="hibernate1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UpdateStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.hibernate.demo.UpdateStudentDemo" />
       <module name="hibernate1" />
@@ -136,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestJdbc" />
       <item itemvalue="Application.CreateStudentDemo" />
       <item itemvalue="Application.ReadStudentDemo" />
       <item itemvalue="Application.QueryStudentDemo" />
       <item itemvalue="Application.UpdateStudentDemo" />
+      <item itemvalue="Application.DeleteStudentDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DeleteStudentDemo" />
         <item itemvalue="Application.UpdateStudentDemo" />
         <item itemvalue="Application.QueryStudentDemo" />
         <item itemvalue="Application.ReadStudentDemo" />
         <item itemvalue="Application.CreateStudentDemo" />
-        <item itemvalue="Application.TestJdbc" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569319099793</updated>
-      <workItem from="1569319103438" duration="20305000" />
+      <workItem from="1569319103438" duration="21133000" />
     </task>
     <task id="LOCAL-00001" summary="Add the various jar files and built them using Add libraries in intelliJ after right-clicking or modules in project structure. Check if the Class TestJdbc was connected to the database, add hibernate.cfg.xml file, Create a Student class mapping it using @Entity annotation to map it to the student table.">
       <created>1569321790057</created>
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569338039853</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Bulk update using executeUpdate methpd">
+      <created>1569339561913</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569339561913</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +269,8 @@
     <MESSAGE value="Query the database for all students in the database" />
     <MESSAGE value="Query the database using certain parameters" />
     <MESSAGE value="Updating student profile and write further queries using the HQL Like query parameter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating student profile and write further queries using the HQL Like query parameter." />
+    <MESSAGE value="Bulk update using executeUpdate methpd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bulk update using executeUpdate methpd" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
