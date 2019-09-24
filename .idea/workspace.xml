@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a65e1fd-83ec-4198-9113-a8e7e8a5de7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql-scripts/01-create-user.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql-scripts/02-student-tracker.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/QueryStudentDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/ReadStudentDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/hibernate/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/hibernate/demo/QueryStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/QueryStudentDemo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReadStudentDemo">
+  <component name="RunManager" selected="Application.QueryStudentDemo">
     <configuration name="CreateStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.hibernate.demo.CreateStudentDemo" />
       <module name="hibernate1" />
@@ -93,6 +88,19 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.hibernate.demo.QueryStudentDemo" />
+      <module name="hibernate1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.hibernate.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,9 +136,11 @@
       <item itemvalue="Application.TestJdbc" />
       <item itemvalue="Application.CreateStudentDemo" />
       <item itemvalue="Application.ReadStudentDemo" />
+      <item itemvalue="Application.QueryStudentDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueryStudentDemo" />
         <item itemvalue="Application.ReadStudentDemo" />
         <item itemvalue="Application.CreateStudentDemo" />
         <item itemvalue="Application.TestJdbc" />
@@ -147,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569319099793</updated>
-      <workItem from="1569319103438" duration="12909000" />
+      <workItem from="1569319103438" duration="13941000" />
     </task>
     <task id="LOCAL-00001" summary="Add the various jar files and built them using Add libraries in intelliJ after right-clicking or modules in project structure. Check if the Class TestJdbc was connected to the database, add hibernate.cfg.xml file, Create a Student class mapping it using @Entity annotation to map it to the student table.">
       <created>1569321790057</created>
@@ -177,7 +187,28 @@
       <option name="project" value="LOCAL" />
       <updated>1569326461512</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add SQL scripts for creating student and user tables">
+      <created>1569332139627</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569332139627</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create a setter and getter for Id and add @GenerateValue annotation to match the table">
+      <created>1569332226536</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569332226536</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create a QueryStudentDemo and ReadStudentDemo file for reading a student's record using it's Id">
+      <created>1569332310035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569332310035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +230,10 @@
     <MESSAGE value="Map fields to column in the database, create constructor with getters and setters" />
     <MESSAGE value="Create a toString method and added hibernate.cfg.xml file" />
     <MESSAGE value="Create a session factory,create a session, use the session object object to create java objects." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a session factory,create a session, use the session object object to create java objects." />
+    <MESSAGE value="Add SQL scripts for creating student and user tables" />
+    <MESSAGE value="Create a setter and getter for Id and add @GenerateValue annotation to match the table" />
+    <MESSAGE value="Create a QueryStudentDemo and ReadStudentDemo file for reading a student's record using it's Id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a QueryStudentDemo and ReadStudentDemo file for reading a student's record using it's Id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
