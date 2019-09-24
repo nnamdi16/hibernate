@@ -41,6 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -157,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569319099793</updated>
-      <workItem from="1569319103438" duration="13941000" />
+      <workItem from="1569319103438" duration="15201000" />
     </task>
     <task id="LOCAL-00001" summary="Add the various jar files and built them using Add libraries in intelliJ after right-clicking or modules in project structure. Check if the Class TestJdbc was connected to the database, add hibernate.cfg.xml file, Create a Student class mapping it using @Entity annotation to map it to the student table.">
       <created>1569321790057</created>
@@ -208,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569332310035</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Query the database for all students in the database">
+      <created>1569333485964</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569333485964</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +241,8 @@
     <MESSAGE value="Add SQL scripts for creating student and user tables" />
     <MESSAGE value="Create a setter and getter for Id and add @GenerateValue annotation to match the table" />
     <MESSAGE value="Create a QueryStudentDemo and ReadStudentDemo file for reading a student's record using it's Id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a QueryStudentDemo and ReadStudentDemo file for reading a student's record using it's Id" />
+    <MESSAGE value="Query the database for all students in the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query the database for all students in the database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -245,6 +254,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/hibernate/demo/QueryStudentDemo.java</url>
+          <line>11</line>
+          <properties class="com.company.hibernate.demo.QueryStudentDemo" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
