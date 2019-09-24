@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a65e1fd-83ec-4198-9113-a8e7e8a5de7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/CreateStudentDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-scripts/01-create-user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql-scripts/02-student-tracker.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/QueryStudentDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/ReadStudentDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/hibernate/demo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/hibernate/demo/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +46,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.hibernate.demo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
@@ -67,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ReadStudentDemo">
     <configuration name="CreateStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.hibernate.demo.CreateStudentDemo" />
       <module name="hibernate1" />
@@ -91,6 +97,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReadStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.hibernate.demo.ReadStudentDemo" />
+      <module name="hibernate1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.hibernate.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestJdbc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.TestJdbc" />
       <module name="hibernate1" />
@@ -108,9 +127,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.TestJdbc" />
       <item itemvalue="Application.CreateStudentDemo" />
+      <item itemvalue="Application.ReadStudentDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadStudentDemo" />
         <item itemvalue="Application.CreateStudentDemo" />
         <item itemvalue="Application.TestJdbc" />
       </list>
@@ -126,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569319099793</updated>
-      <workItem from="1569319103438" duration="7152000" />
+      <workItem from="1569319103438" duration="12909000" />
     </task>
     <task id="LOCAL-00001" summary="Add the various jar files and built them using Add libraries in intelliJ after right-clicking or modules in project structure. Check if the Class TestJdbc was connected to the database, add hibernate.cfg.xml file, Create a Student class mapping it using @Entity annotation to map it to the student table.">
       <created>1569321790057</created>
@@ -142,7 +163,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569322338167</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create a toString method and added hibernate.cfg.xml file">
+      <created>1569326364706</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569326364706</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create a session factory,create a session, use the session object object to create java objects.">
+      <created>1569326461512</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569326461512</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +197,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add the various jar files and built them using Add libraries in intelliJ after right-clicking or modules in project structure. Check if the Class TestJdbc was connected to the database, add hibernate.cfg.xml file, Create a Student class mapping it using @Entity annotation to map it to the student table." />
     <MESSAGE value="Map fields to column in the database, create constructor with getters and setters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Map fields to column in the database, create constructor with getters and setters" />
+    <MESSAGE value="Create a toString method and added hibernate.cfg.xml file" />
+    <MESSAGE value="Create a session factory,create a session, use the session object object to create java objects." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a session factory,create a session, use the session object object to create java objects." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/hibernate/demo/ReadStudentDemo.java</url>
+          <line>9</line>
+          <properties class="com.company.hibernate.demo.ReadStudentDemo" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
