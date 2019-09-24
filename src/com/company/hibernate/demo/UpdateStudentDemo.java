@@ -9,7 +9,10 @@ public class UpdateStudentDemo {
 
     public static void main(String[] args) {
         //Create session factory
-        SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
+        SessionFactory factory = new Configuration()
+                .configure("hibernate.cfg.xml")
+                .addAnnotatedClass(Student.class)
+                .buildSessionFactory();
 
         //Create session
         Session session = factory.getCurrentSession();
@@ -29,6 +32,16 @@ public class UpdateStudentDemo {
             myStudent.setFirstName("Scooby");
 
             //Commit the transaction
+            session.getTransaction().commit();
+
+            //NEW CODE
+
+            session = factory.getCurrentSession();
+            session.beginTransaction();
+
+            //Update email for all students
+            System.out.println("Update email for all students");
+            session.createQuery("update Student set email='foo@gmail.com'").executeUpdate();
             session.getTransaction().commit();
 
             System.out.println("Done !!");
